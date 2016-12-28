@@ -10,5 +10,5 @@
 @import 'imports/_base.css';
 @import 'imports/_heading.css';
 @import 'imports/_nav.css';
-@import 'imports/_card.css';
+@import 'imports/_clickable_card.css';
 @import 'imports/_footer.css';
