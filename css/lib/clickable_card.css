@@ -1,8 +1,5 @@
 /*
-	These are the clickable_card components from last week.
-	Create a new content clickable_card component that allows users to click anywhere on the clickable_card, instead of just the "read more" button at the bottom
-
-	tip: You will need to use an `a` tag with `display:block;` set, and a href (jet set it to `#` for now as we don't care where it goes)
+	Clickable cards
 */
 .clickable_card__grid{
 	padding-top: 40px;
