@@ -1,91 +1,99 @@
 /*
 	Clickable cards
 */
-.clickable_card__grid{
-	padding-top: 40px;
-	padding-bottom: 14px;
-	max-width: 900px;
-	margin-left: auto;
-	margin-right: auto;
+
+.clickable_card__grid {
+  padding-top: 40px;
+  padding-bottom: 14px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.clickable_card__grid::after{
-	/*Clear floats using the clearfix method as overflow: hidden will hide shadows*/
-	/* [https://css-tricks.com/snippets/css/clear-fix/] */
-	content: "";
-	display: table;
-	clear: both;
+.clickable_card__grid::after {
+  /*Clear floats using the clearfix method as overflow: hidden will hide shadows*/
+  /* [https://css-tricks.com/snippets/css/clear-fix/] */
+  content: "";
+  display: table;
+  clear: both;
 }
+
 
 /*
 	Lets put the sizeing options behind a selector so we can use cards in other places
 */
-.clickable_card__grid .clickable_card{
-	/*background-color: white;*/
-	color: black;
-	color: rgba(0,0,0,0.87); /*Opacity for browsers that support it*/
-	
-	/*clickable_card display styles*/
-	/*border-radius: 2px;
+
+.clickable_card__grid .clickable_card {
+  /*background-color: white;*/
+  color: black;
+  color: rgba(0, 0, 0, 0.87);
+  /*Opacity for browsers that support it*/
+  /*clickable_card display styles*/
+  /*border-radius: 2px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
-	
-	/*prevent image from displaying beyond round borders*/
-	/*overflow: hidden; */
-	
-	/* Layout styles */
-	margin-bottom: 28px;
-	float: left;
-	width: 32%;
-	margin-right: 2%;
+  /*prevent image from displaying beyond round borders*/
+  /*overflow: hidden; */
+  /* Layout styles */
+  margin-bottom: 28px;
+  float: left;
+  width: 32%;
+  margin-right: 2%;
 }
-.clickable_card__grid .clickable_card:nth-child(3n){
-	margin-right: 0;
+
+.clickable_card__grid .clickable_card:nth-child(3n) {
+  margin-right: 0;
 }
+
 
 /* Note we've moved the "card" display styles here so that we can adjust them with :hover states*/
-.clickable_card__link{
-	display: block;
-	color: inherit;
-	text-decoration: none;
 
-	/* Card display styles */
-	background-color: white;
-	border-radius: 2px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: box-shadow 100ms; /*animate this value*/
+.clickable_card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  /* Card display styles */
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 100ms;
+  /*animate this value*/
 }
 
-.clickable_card__link:hover, .clickable_card__link:focus{
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.clickable_card__link:hover,
+.clickable_card__link:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.clickable_card__image{
-	width: 100%;
+.clickable_card__image {
+  width: 100%;
 }
 
-.clickable_card__text,.clickable_card__footer{
-	padding-left: 14px;
-	padding-right: 14px;
-}
-.clickable_card__title{
-	font-size: 18px;
+.clickable_card__text,
+.clickable_card__footer {
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
-.clickable_card__btn{
-	/*Style as a button*/
-	padding: 7px 24px;
-	margin-bottom: 14px;
-	text-decoration: none;
-	display: inline-block;
-	color: white;
-	background-color: #0277BD;
-	transition: background-color 100ms;
+.clickable_card__title {
+  font-size: 18px;
 }
 
-.clickable_card__btn:hover, .clickable_card__btn:focus{
-	background-color: #0288D1;
+.clickable_card__btn {
+  /*Style as a button*/
+  padding: 7px 24px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: #0277BD;
+  transition: background-color 100ms;
 }
 
-.clickable_card__btn:active{
-	background-color: #039BE5;
+.clickable_card__btn:hover,
+.clickable_card__btn:focus {
+  background-color: #0288D1;
+}
+
+.clickable_card__btn:active {
+  background-color: #039BE5;
 }

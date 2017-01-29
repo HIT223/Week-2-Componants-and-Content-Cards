@@ -1,16 +1,16 @@
-.heading__text{
-	padding-top: 50px;
-	padding-bottom: 50px;
-
-	/** Image attribution: https://www.pexels.com/photo/italian-landscape-mountains-nature-1562/ */
-	background-image: url(../../images/landscape-mountains-nature-lake.jpeg);
-	background-size: cover;
-	background-position: center;
+.heading__text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /** Image attribution: https://www.pexels.com/photo/italian-landscape-mountains-nature-1562/ */
+  background-image: url(../../images/landscape-mountains-nature-lake.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
-.heading__title,.heading__tagline{
-	text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.37);
-	max-width: 900px;
-	margin-left: auto;
-	margin-right: auto;
+.heading__title,
+.heading__tagline {
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.37);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
